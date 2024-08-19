@@ -14,7 +14,6 @@ Enables Airplay2 audio streaming to Home Assistant to use builtin audio speaker
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports i386 Architecture][i386-shield]
-[![Docker Pulls][pulls-shield]][dockerhub]
 
 ## Repository
 
@@ -26,7 +25,6 @@ To install use this [repository](https://github.com/cocochristmas/hassio)
 [amd64-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
 [i386-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
 [license-shield]: https://img.shields.io/github/license/cocochristmas/addon-shairport2-sync.svg
-[dockerhub]: https://github.com/cocochristmas?tab=packages
 [pulls-shield]: https://img.shields.io/docker/pulls/cocochristmas/shairport2-sync.svg
 [releases-shield]: https://img.shields.io/github/release/cocochristmas/addon-shairport2-sync.svg
 [releases]: https://github.com/cocochristmas/addon-shairport2-sync/releases
