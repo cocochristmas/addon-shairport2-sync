@@ -20,18 +20,18 @@ Enables Airplay2 audio streaming to Home Assistant to use builtin audio speaker
 
 ## Repository
 
-To install use this [repository](https://github.com/v3rm0n/hassio)
+To install use this [repository](https://github.com/cocochristmas/hassio)
 
 [aarch64-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
 [armhf-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
 [armv7-shield]: https://img.shields.io/badge/architecture-armv7-blue.svg
 [amd64-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
 [i386-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
-[license-shield]: https://img.shields.io/github/license/v3rm0n/addon-shairport-sync.svg
-[dockerhub]: https://hub.docker.com/r/maidok/shairport-sync
-[layers-shield]: https://images.microbadger.com/badges/image/maidok/shairport-sync.svg
-[microbadger]: https://microbadger.com/images/maidok/shairport-sync
-[pulls-shield]: https://img.shields.io/docker/pulls/maidok/shairport-sync.svg
-[version-shield]: https://images.microbadger.com/badges/version/maidok/shairport-sync.svg
-[releases-shield]: https://img.shields.io/github/release/v3rm0n/addon-shairport-sync.svg
-[releases]: https://github.com/v3rm0n/addon-shairport-sync/releases
+[license-shield]: https://img.shields.io/github/license/cocochristmas/addon-shairport2-sync.svg
+[dockerhub]: https://hub.docker.com/r/cocochristmas/shairport2-sync
+[layers-shield]: https://images.microbadger.com/badges/image/cocochristmas/shairport2-sync.svg
+[microbadger]: https://microbadger.com/images/cocochristmas/shairport2-sync
+[pulls-shield]: https://img.shields.io/docker/pulls/cocochristmas/shairport2-sync.svg
+[version-shield]: https://images.microbadger.com/badges/version/cocochristmas/shairport2-sync.svg
+[releases-shield]: https://img.shields.io/github/release/cocochristmas/addon-shairport2-sync.svg
+[releases]: https://github.com/cocochristmas/addon-shairport2-sync/releases
