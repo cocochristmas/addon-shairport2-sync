@@ -1,11 +1,11 @@
 {
     "squash": true,
     "build_from": {
-        "aarch64": "ghcr.io/home-assistant/base-aarch64-debian:latest",
-        "amd64": "ghcr.io/home-assistant/base-amd64-debian:latest",
-        "armhf": "ghcr.io/home-assistant/base-armhf-debian:latest",
-        "armv7": "ghcr.io/home-assistant/base-armv7-debian:latest",
-        "i386": "ghcr.io/home-assistant/base-i386-debian:latest"
+        "aarch64": "ghcr.io/home-assistant/aarch64-base-debian:latest",
+        "amd64": "ghcr.io/home-assistant/amd64-base-debian:latest",
+        "armhf": "ghcr.io/home-assistant/armhf-base-debian:latest",
+        "armv7": "ghcr.io/home-assistant/armv7-base-debian:latest",
+        "i386": "ghcr.io/home-assistant/i386-base-debian:latest"
     },
     "args": {}
 }
