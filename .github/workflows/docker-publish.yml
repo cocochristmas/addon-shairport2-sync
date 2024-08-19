@@ -25,4 +25,4 @@ jobs:
           args: |
             --all \
             --target . \
-            --docker-hub ghcr.io/${{ github.repository }}
+            --docker-hub ghcr.io/
