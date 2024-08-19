@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.6
+ARG BUILD_FROM=ghcr.io/home-assistant/base-debian:16.2.1
 FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
@@ -6,62 +6,24 @@ ENV LANG C.UTF-8
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN apk -U add \
-        git \
-        build-base \
-        autoconf \
-        automake \
-        libtool \
-        alsa-lib-dev \
-        libdaemon-dev \
-        popt-dev \
-        libressl-dev \
-        soxr-dev \
-        avahi-dev \
-        libconfig-dev \
- && cd /root \
- && git clone https://github.com/mikebrady/shairport-sync.git \
- && cd shairport-sync \
- && autoreconf -i -f \
- && ./configure \
+RUN apt update 
+RUN apt install -y --no-install-recommends build-essential git autoconf automake libtool \
+       libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev \
+       libplist-dev libsodium-dev libavutil-dev libavcodec-dev libavformat-dev uuid-dev libgcrypt-dev xxd 
+WORKDIR /root
+RUN git clone https://github.com/mikebrady/shairport-sync.git 
+WORKDIR /root/shairport-sync
+RUN autoreconf -fi 
+RUN ./configure \
         --with-alsa \
         --with-pipe \
         --with-avahi \
         --with-ssl=openssl \
         --with-soxr \
         --with-metadata \
-        --with-airplay-2 \
- && make \
- && make install \
- && cd / \
- && apk --purge del \
-        git \
-        build-base \
-        autoconf \
-        automake \
-        libtool \
-        alsa-lib-dev \
-        libdaemon-dev \
-        popt-dev \
-        libressl-dev \
-        soxr-dev \
-        avahi-dev \
-        libconfig-dev \
- && apk add \
-        dbus \
-        alsa-lib \
-        alsa-plugins-pulse \
-        libdaemon \
-        popt \
-        libressl \
-        soxr \
-        avahi \
-        libconfig \
- && rm -rf \
-        /etc/ssl \
-        /var/cache/apk/* \
-        /lib/apk/db/* \
-        /root/shairport-sync
+        --with-airplay-2 
+RUN make 
+RUN make install
 
 # Copy root filesystem
 COPY rootfs /
