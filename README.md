@@ -14,8 +14,6 @@ Enables Airplay2 audio streaming to Home Assistant to use builtin audio speaker
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports i386 Architecture][i386-shield]
-
-[![Docker Layers][layers-shield]][microbadger]
 [![Docker Pulls][pulls-shield]][dockerhub]
 
 ## Repository
