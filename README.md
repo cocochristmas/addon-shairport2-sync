@@ -29,7 +29,6 @@ To install use this [repository](https://github.com/cocochristmas/hassio)
 [i386-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
 [license-shield]: https://img.shields.io/github/license/cocochristmas/addon-shairport2-sync.svg
 [dockerhub]: https://hub.docker.com/r/cocochristmas/shairport2-sync
-[layers-shield]: https://images.microbadger.com/badges/image/cocochristmas/shairport2-sync.svg
 [pulls-shield]: https://img.shields.io/docker/pulls/cocochristmas/shairport2-sync.svg
 [releases-shield]: https://img.shields.io/github/release/cocochristmas/addon-shairport2-sync.svg
 [releases]: https://github.com/cocochristmas/addon-shairport2-sync/releases
